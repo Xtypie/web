@@ -12,9 +12,9 @@
             <button class="lsc-but"></button>
             <nav>
                 <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="/contacts.html">Контакты</a></li>
                 </ul>   
             </nav>
         </header>
@@ -33,12 +33,29 @@
             <section id="content">
                 <h2>Welcome to the Los Santos Customs!</h2>
                 <p>Style automotors</p>
-                <button id="actionButton">Каталог</button>
+                <button id="actionButton">Catalog</button>
             </section>
         </main>
+
+        <div class="follow-for-news">
+            <h3>Subscribe for more news</h3>
+            <div>
+                <input type="email" id = "emailField" placeholder="Enter your email">
+                <button>Continue</button>
+            </div>
+        </div>
+
+        <script>
+            function chekEmail()
+            {
+                let email = document.querySelector('#emailField').value;
+                if (!email.includes('@')) alert ('there is no @ in your email')
+                else alert('Thanks!')
+            }
+        </script>
     
         <footer>
-            <p>какая то билибирда, которую пишут на всех сайтах в конце страницы</p>
+            <p>some text which is written by developer</p>
             <p>&copy; 2025 Los Santos Customs</p>
         </footer>
     </div>
